@@ -1,0 +1,158 @@
+//Meghna Sharma 2/20/2018
+import java.io.*;      //the File class
+import java.util.*;    //the Scanner class
+import javax.swing.JOptionPane;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+public class Driver08
+{
+   public static void main(String[] args) throws Exception
+   {
+   
+      System.out.println("***********************************************************************");
+      System.out.println("****W*E*L*C*O*M*E*****T*O*****F*A*S*H*I*I*O*N*****D*E*S*I*I*G*N*E*R****");
+      System.out.println("***********************************************************************");
+      System.out.println("Introducing an efficient and creative business fashion designer for women");
+      System.out.println("***********************************************************************");
+
+      String myType = (JOptionPane.showInputDialog("What are you wearing on the top? Type the kind of top. (Blouse, Blazer, Cardigan, Shell or Sweater)."));
+      String myColor = (JOptionPane.showInputDialog("What are you wearing on the top? Type the color. (Maroon, Yellow, Emerald, Light Blue, White, or Black)")); 
+         
+      if(myType.equals("Blouse"))
+      {
+         if(myColor.equals("Maroon"))
+         {
+            System.out.println("With a maroon blouse you should wear a dark colored pencil skirt or dress pants and maroon shoes.");
+         }
+         else if(myColor.equals("Yellow"))
+         {
+            System.out.println("With a yellow blouse you should wear a dark colored or white pencil skirt or dress pants and yellow shoes. You might wish to pair it with a dark colored blazer.");
+         }
+         else if(myColor.equals("Emerald"))
+         {
+            System.out.println("With an emerald blouse you may wish to wear a dark colored or white pencil skirt or dress pants and emerald shoes. You can continue accents with dark earrings.");
+         }
+         else if(myColor.equals("Light Blue"))
+         {
+            System.out.println("With a light blue blouse you should wear a black pencil skirt or dress pants and light blue shoes.");
+         }
+         else if(myColor.equals("White"))
+         {
+            System.out.println("With a white blouse you should wear a colored or dark pencil skirt or dress pants. ADD COLOR! Matching colored earings and shoes are suggested.");
+         }
+         else if (myColor.equals("Black"))
+         {
+            System.out.println("With a black blouse you should wear a colored or white pencil skirt or dress pants. Do not wear black on the bottom...say it with me 'no black with black'.");
+         }
+      }
+   
+      else if(myType.equals("Blazer"))
+      {
+         if(myColor.equals("Maroon"))
+         {
+            System.out.println("With a maroon blazer you should wear a dark colored pencil skirt or dress pants and maroon shoes. Wear a white tank top.");
+         }
+         else if(myColor.equals("Yellow"))
+         {
+            System.out.println("With a yellow blazer you should wear a dark colored or white pencil skirt or dress pants and yellow shoes. You should wear a white tank top underneath.");
+         }
+         else if(myColor.equals("Emerald"))
+         {
+            System.out.println("With an emerald blazer you may wish to wear a dark colored or white pencil skirt or dress pants and emerald shoes. You can continue accents with a dark tank top.");
+         }
+         else if(myColor.equals("Light Blue"))
+         {
+            System.out.println("With a light blue blazer you should wear a black pencil skirt or dress pants and light blue shoes. You may wish to wear a white, light pink, or grey tank top.");
+         }
+         else if(myColor.equals("White"))
+         {
+            System.out.println("With a white blazer you should wear a colored or dark pencil skirt or dress pants. ADD COLOR! Matching colored tank top, earings, and shoes are suggested");
+         }
+         else if (myColor.equals("Black"))
+         {
+            System.out.println("With a black blazer you should wear a colored or white pencil skirt or dress pants. WEAR A COLORED OR WHITE TANK TOP. Do not. Wear a black tank top.");
+         }
+      }
+      else if(myType.equals("Cardigan"))
+      {
+         if(myColor.equals("Maroon"))
+         {   
+            System.out.println("With a maroon cardigan, you should wear a dress, preferably black! Also, wear black or maroon flats.");
+         }
+         else if(myColor.equals("Yellow"))
+         {
+            System.out.println("With a yellow cardigan, you should wear a blue or purple dress (complimentary colors), with flats or heels matching either color.");
+         }
+         else if(myColor.equals("Emerald"))
+         {
+            System.out.println("With an emerald cardigan, you should wear a black or white dress, with matching emerald/black flats/heels.");
+         }
+         else if(myColor.equals("Light Blue"))
+         {
+            System.out.println("With a light blue cardigan, you should wear a warm-colored dress, reds to yellows, along with matching shoes.");
+         }
+         else if(myColor.equals("White"))
+         {
+            System.out.println("With a white cardigan, you should wear a colorful dress, with matching or nude heels or flats.");
+         }
+         else if(myColor.equals("Black"))
+         {
+            System.out.println("With a black cardigan, you should wear a colorful dress, preferably with black heels");
+         }
+         }
+      else if(myType.equals("Shell"))
+      {
+            if(myColor.equals("Maroon")) 
+            {
+               System.out.println("With a maroon shell, you should wear a black or dark gray pencil skirt. Also, Fashiion Desiigner reccomends that you wear shoes of a maroon color also.");
+            }
+            else if(myColor.equals("Yellow"))
+            {
+               System.out.println("With a yellow shell, you should wear either white creased dress pants or a grey pencil skirt up to waist level. Wear yellow or blue shoes to compliement these colors. ");
+            }
+            else if(myColor.equals("Emerald"))
+            {
+               System.out.println("With an emerald shell, you should wear either white creased dress pants or a grey pencil skirt up to waist level. Wear yellow or blue shoes to compliement these colors. ");
+            }
+            else if(myColor.equals("Light Blue"))
+            {
+               System.out.println("With a light blue shell, you should wear either white or black dress pants along with blue or complimentary orange heels!.");
+            }
+            else if(myColor.equals("White"))
+            {
+               System.out.println("With a white shell, you should WEAR COLOR. Color always compliments a white shell nicely. Try to wear a bright and vibrant pencil skirt/pants along with white heels.");
+            }
+            else if(myColor.equals("Black"))
+            {
+               System.out.println("With an black shell, you should wear white on the bottom for a classic look, or color along with black or white heels for a playful and bright look. ");
+            }
+         }        
+      else if(myType.equals("Sweater"))
+      {
+            if(myColor.equals("Maroon")) 
+            {
+               System.out.println("With a maroon sweater, a dark pencil skirt or dark dress pants would be suggested. To make it pop, you could wear white or red heels.");
+            }
+            else if(myColor.equals("Yellow")) 
+            {
+               System.out.println("With a yellow sweater, you could go with a 'bumble bee look' and wear black bottoms or wear a blue or green pencil skirt to create a vibrant look.");
+            }
+            else if(myColor.equals("Emerald")) 
+            {
+               System.out.println("With an emerald sweater, wear a grey pencil skirt and emerald heels. Definitely wear black or white jewelry to make the outfit more dressy if desired.");
+            }
+            else if(myColor.equals("Light Blue")) 
+            {
+               System.out.println("With a light blue sweater, wear a white pencil skirt and blue or black heels to continue the icy light blue tone of the outfit.");
+            }
+            else if(myColor.equals("White")) 
+            {
+               System.out.println("With a white sweater, wear colored pants. COLOR WITH WHITE IS IMPORTANT. Depending on the occasion, a variety of plain colors would be suggested for bottoms and heels.");
+            }
+            else if(myColor.equals("Black")) 
+            {
+               System.out.println("With a black sweater, wear a white pencil skirt and black heels for a sophisticated and classy look.");
+            }
+         }
+      }
+   }
